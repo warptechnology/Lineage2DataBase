@@ -1,4 +1,6 @@
 
+using Lineage2DataBase.Api;
+
 namespace Lineage2DataBase
 {
     /// <summary>
@@ -18,15 +20,15 @@ namespace Lineage2DataBase
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-            builder.Services.AddOpenApi();
+
+            builder.Services.AddSwaggerGen();
+            builder.Services.AddLineage2DataBaseApi();
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
-                app.MapOpenApi();
-            }
+            app.UseSwagger();
+            app.UseSwaggerUI();
+            app.MapControllers();
 
             app.UseHttpsRedirection();
 

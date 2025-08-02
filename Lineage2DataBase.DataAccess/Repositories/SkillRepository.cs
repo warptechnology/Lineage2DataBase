@@ -8,11 +8,27 @@ namespace Lineage2DataBase.DataAccess.Repositories
     /// </summary>
     public class SkillRepository : ISkillRepository
     {
+        private readonly string _connectionString;
+        /// <summary>
+        /// 
+        /// </summary>
+        
+        public SkillRepository()
+        {
+            _connectionString = "";
+        }
+
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
+        ///<param name="level">level</param>
+        ///<param name="className">className</param>
+        ///<param name="cancellationToken">cancellationToken</param>    
 
-        public Task<IEnumerable<SkillEntity>> GetSkillByClass() => Task.FromResult(new List<SkillEntity> { new() });
+        public Task<List<SkillEntity>> GetSkillByClass(string className, int level, CancellationToken cancellationToken = default)
+        
+          =>  Task.FromResult(new List<SkillEntity> { new() { Name = _connectionString } });
+        
     }
 }

@@ -11,6 +11,9 @@ namespace Lineage2DataBase.DataAccess.Abstractions
         /// 
         /// </summary>
         /// <returns></returns>
-        Task<IEnumerable<SkillEntity>> GetSkillByClass();
+        /// <param name="cancellationToken">cancellationToken</param>
+        /// <param name="className">className</param>
+        /// <param name="level">  lvl  </param>
+        Task<List<SkillEntity>> GetSkillByClass(string className, int level, CancellationToken cancellationToken = default);
     }
 }

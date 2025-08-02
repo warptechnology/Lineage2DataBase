@@ -1,4 +1,9 @@
-﻿namespace Lineage2DataBase.Api
+﻿using Lineage2DataBase.DataAccess.Abstractions;
+using Lineage2DataBase.DataAccess.Repositories;
+using Lineage2DataBase.Services.Abstractions;
+using Lineage2DataBase.Services.Services;
+
+namespace Lineage2DataBase.Api
 {
     /// <summary>
     /// Предоставляет методы расширения для регистрации сервисов Lineage2DataBase API в контейнере зависимостей.
@@ -14,6 +19,9 @@
         {
             // Register your API services here
             // Example: services.AddScoped<IMyService, MyService>();
+            services.AddScoped<ISkillsService,SkillsService >();
+            services.AddScoped<ISkillRepository, SkillRepository>();
+
             return services;
         }
     }
