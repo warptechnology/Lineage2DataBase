@@ -1,0 +1,6 @@
+@Lineage2DataBase_HostAddress = http://localhost:5062
+
+GET {{Lineage2DataBase_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
