@@ -5,7 +5,7 @@ VisualStudioVersion = 17.14.36310.24
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lineage2DataBase.Api", "Lineage2DataBase\Lineage2DataBase.Api.csproj", "{47156140-7580-4CCB-9E8D-E98826CF40BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lineage2DataBase.Servises", "Lineage2DataBase.Servises\Lineage2DataBase.Servises.csproj", "{55BEF6C8-1598-4125-BBF9-219EADA0AAA7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lineage2DataBase.Services", "Lineage2DataBase.Servises\Lineage2DataBase.Services.csproj", "{55BEF6C8-1598-4125-BBF9-219EADA0AAA7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lineage2DataBase.DataAccess", "Lineage2DataBase.DataAccess\Lineage2DataBase.DataAccess.csproj", "{56560EFB-7B81-4593-A4B3-B2AA2CF321C9}"
 EndProject
