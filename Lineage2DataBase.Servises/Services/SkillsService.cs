@@ -27,6 +27,10 @@ public class SkillsService : ISkillsService
     /// <inheritdoc/>
     public async Task<IEnumerable<Skill>> GetSkillsAsync(string className, int level, CancellationToken cancellationToken = default)
     {
+        //1 получить id  навыков по классу и уровню
+        //2 получить из базы данные по этим навыкам
+        //3 собрать список этих скиллов и вернуть его
+
         var skills = await _skillsRepository.GetSkillByClass(className, level, cancellationToken);
         return skills.Select(skill => new Skill
         {

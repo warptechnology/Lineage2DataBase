@@ -19,7 +19,7 @@ namespace Lineage2DataBase.Api
         {
             // Register your API services here
             // Example: services.AddScoped<IMyService, MyService>();
-            services.AddScoped<ISkillsService,SkillsService >();
+            services.AddScoped<ISkillsService, SkillsService>();
             services.AddScoped<ISkillRepository, SkillRepository>();
 
             return services;
